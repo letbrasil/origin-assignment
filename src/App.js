@@ -1,8 +1,18 @@
 import React from 'react';
-// import './App.css';
+import { GlobalStyle } from './global-style';
+import Navbar from './components/Navbar';
+import Header from './components/Header';
+import SimulationCard from './components/SimulationCard';
 
 function App() {
-  return <div data-testid="greetings-container">Welcome to the Origin THA</div>;
+  return (
+    <>
+      <GlobalStyle />
+      <Navbar />
+      <Header />
+      <SimulationCard />
+    </>
+  );
 }
 
 export default App;
