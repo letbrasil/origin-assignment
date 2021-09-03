@@ -50,7 +50,21 @@ export const GoalAmount = styled.div`
 `;
 
 export const Dollar = styled.img`
-  margin: 20px 17px;
+  margin: 16px 12px;
+`;
+
+export const Amount = styled.input`
+  font-family: 'Rubik', sans-serif;
+  font-size: 24px;
+  color: #4d6475;
+  width: 100%;
+  border: none;
+  outline: none;
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
 `;
 
 export const Calendar = styled.div`
@@ -68,6 +82,26 @@ export const ArrowButton = styled.button`
   padding: 18px;
   background-color: #ffffff;
   border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #f4f8fa;
+  }
+`;
+
+export const ReachDate = styled.div`
+  text-align: center;
+  font-size: 16px;
+`;
+
+export const Month = styled.p`
+  font-weight: 600;
+  margin-bottom: 7px;
+`;
+
+export const Year = styled.p`
+  font-weight: 400;
+  color: #708797;
 `;
 
 export const ResultBox = styled.div`
@@ -114,4 +148,9 @@ export const ConfirmButton = styled.button`
   height: 56px;
   padding: 18px;
   border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #0079ff;
+  }
 `;
