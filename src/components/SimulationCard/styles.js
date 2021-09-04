@@ -6,14 +6,25 @@ export const Container = styled.main`
   width: 560px;
   height: 511px;
   margin: auto;
-  padding: 40px;
+  padding: 35px 40px 40px;
   border-radius: 8px;
   box-shadow: 0px 16px 32px rgba(30, 42, 50, 0.08);
+
+  @media (max-width: 560px) {
+    width: 100%;
+    height: 586px;
+    padding: 30px 24px 40px;
+    margin-bottom: 63px;
+  }
 `;
 
 export const GoalWrapper = styled.div`
   display: flex;
   margin-bottom: 28px;
+
+  @media (max-width: 560px) {
+    margin-bottom: 24px;
+  }
 `;
 
 export const GoalIcon = styled.img`
@@ -25,17 +36,30 @@ export const Title = styled.p`
   font-size: 24px;
   padding-top: 4px;
   padding-bottom: 4px;
+
+  @media (max-width: 560px) {
+    font-size: 20px;
+  }
 `;
 
 export const Subtitle = styled.p`
   font-size: 16px;
   color: #708797;
+
+  @media (max-width: 560px) {
+    font-size: 14px;
+  }
 `;
 
 export const InputsWrapper = styled.div`
   display: flex;
   margin-bottom: 24px;
   font-size: 14px;
+
+  @media (max-width: 560px) {
+    display: block;
+    font-size: 12px;
+  }
 `;
 
 export const GoalAmount = styled.div`
@@ -47,6 +71,11 @@ export const GoalAmount = styled.div`
   border-radius: 4px;
   margin-top: 4px;
   margin-right: 16px;
+
+  @media (max-width: 560px) {
+    width: 100%;
+    margin-bottom: 16px;
+  }
 `;
 
 export const Dollar = styled.img`
@@ -65,6 +94,10 @@ export const Amount = styled.input`
   &::-webkit-inner-spin-button {
     -webkit-appearance: none;
   }
+
+  @media (max-width: 560px) {
+    font-size: 20px;
+  }
 `;
 
 export const Calendar = styled.div`
@@ -76,6 +109,10 @@ export const Calendar = styled.div`
   border: 1px solid #e9eef2;
   border-radius: 4px;
   margin-top: 4px;
+
+  @media (max-width: 560px) {
+    width: 100%;
+  }
 `;
 
 export const ArrowButton = styled.button`
@@ -92,6 +129,10 @@ export const ArrowButton = styled.button`
 export const ReachDate = styled.div`
   text-align: center;
   font-size: 16px;
+
+  @media (max-width: 560px) {
+    font-size: 14px;
+  }
 `;
 
 export const Month = styled.p`
@@ -109,6 +150,10 @@ export const ResultBox = styled.div`
   margin-bottom: 32px;
   border-radius: 8px;
   width: 480px;
+
+  @media (max-width: 560px) {
+    width: 100%;
+  }
 `;
 
 export const MonthlyAmount = styled.div`
@@ -118,12 +163,21 @@ export const MonthlyAmount = styled.div`
   height: 75px;
   padding: 0 32px;
   font-size: 20px;
+
+  @media (max-width: 560px) {
+    padding: 0 24px;
+    font-size: 18px;
+  }
 `;
 
 export const DepositValue = styled.p`
   font-family: 'Rubik', sans-serif;
   color: #0079ff;
   font-size: 32px;
+
+  @media (max-width: 560px) {
+    font-size: 24px;
+  }
 `;
 
 export const Detail = styled.div`
@@ -132,6 +186,11 @@ export const Detail = styled.div`
   border-radius: 0 0 8px 8px;
   padding: 24px 32px;
   font-size: 12px;
+
+  @media (max-width: 560px) {
+    text-align: center;
+    padding: 24px;
+  }
 `;
 
 export const ButtonWrapper = styled.div`
@@ -152,5 +211,9 @@ export const ConfirmButton = styled.button`
 
   &:hover {
     background-color: #0079ff;
+  }
+
+  @media (max-width: 560px) {
+    width: 100%;
   }
 `;
