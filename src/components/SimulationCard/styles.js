@@ -12,7 +12,8 @@ export const Container = styled.main`
 
   @media (max-width: 560px) {
     width: 100%;
-    height: 586px;
+    max-width: 360px;
+    height: 590px;
     padding: 30px 24px 40px;
     margin-bottom: 63px;
   }
@@ -123,6 +124,10 @@ export const ArrowButton = styled.button`
 
   &:hover {
     background-color: #f4f8fa;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
   }
 `;
 

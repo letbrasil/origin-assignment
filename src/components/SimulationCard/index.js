@@ -79,6 +79,7 @@ export default function SimulationCard() {
             <Amount
               type="number"
               placeholder="0"
+              min="0"
               value={amount}
               onChange={(e) => setAmount(e.target.value)}
             />
@@ -87,7 +88,10 @@ export default function SimulationCard() {
         <div>
           <p>Reach goal by</p>
           <Calendar>
-            <ArrowButton onClick={() => handleMonthChange(-1)}>
+            <ArrowButton
+              disabled={year === currentYear && month === nextMonth}
+              onClick={() => handleMonthChange(-1)}
+            >
               <img src={arrowLeft} alt="arrow left" />
             </ArrowButton>
             <ReachDate>
