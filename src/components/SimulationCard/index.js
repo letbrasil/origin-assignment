@@ -32,7 +32,7 @@ export default function SimulationCard() {
 
   const [amount, setAmount] = useState('');
   const [year, setYear] = useState(currentYear);
-  const [month, setmonth] = useState(nextMonth);
+  const [month, setMonth] = useState(nextMonth);
 
   function monthName(i) {
     return new Date(year, i).toLocaleString('en', { month: 'long' });
@@ -41,13 +41,13 @@ export default function SimulationCard() {
   function handleMonthChange(n) {
     const newMonth = month + n;
     if (newMonth >= 12) {
-      setmonth(newMonth - 12);
+      setMonth(newMonth - 12);
       setYear(year + 1);
     } else if (newMonth < 0) {
-      setmonth(newMonth + 12);
+      setMonth(newMonth + 12);
       setYear(year - 1);
     } else {
-      setmonth(newMonth);
+      setMonth(newMonth);
     }
   }
 
